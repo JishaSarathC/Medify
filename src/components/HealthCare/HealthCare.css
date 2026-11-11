@@ -1,0 +1,180 @@
+.healthcontainer {
+    width: 100%;
+    max-width: 1140px;
+    min-height: 708px;
+    margin: auto;
+    padding: 40px 15px;
+    box-sizing: border-box;
+}
+
+.healthcontainer h2 {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.healthtag {
+    color: #2AA7FF;
+    text-align: center;
+}
+
+.healthcontainer > h2 {
+    text-align: center;
+}
+
+.hcarecontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.familycontainer {
+    width: 50%;
+    height: 499px;
+    position: relative;
+}
+
+.heal1 {
+    width: 46%;
+    height: auto;
+    top: 50%;
+    left: -5%;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2;
+}
+
+.heal2 {
+    width: 90%;
+    height: 95%;
+    top: 0;
+    left: 8%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+.heal3 {
+    width: 80px;
+    height: 80px;
+    top: 15%;
+    left: 35%;
+    object-fit: contain;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+
+.qcontainer {
+    width: 45%;
+}
+
+.health {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.health p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.health img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+
+    .healthcontainer {
+        min-height: auto;
+        padding: 40px 5%;
+    }
+
+    .hcarecontainer {
+        gap: 20px;
+    }
+
+    .familycontainer {
+        height: 380px;
+    }
+
+    .heal3 {
+        width: 65px;
+        height: 65px;
+    }
+
+    .health {
+        padding: 10px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .healthcontainer {
+        min-height: auto;
+        padding: 30px 5%;
+    }
+
+    .healthcontainer h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .hcarecontainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .familycontainer {
+        width: 100%;
+        height: 330px;
+    }
+
+    .heal1 {
+        width: 45%;
+        left: 0;
+        top: 50%;
+    }
+
+    .heal2 {
+        width: 88%;
+        height: 90%;
+        left: 10%;
+    }
+
+    .heal3 {
+        width: 60px;
+        height: 60px;
+        left: 35%;
+        top: 10%;
+    }
+
+    .qcontainer {
+        width: 100%;
+    }
+
+    .health {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 5px;
+        margin-bottom: 10px;
+    }
+
+    .health p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,113 @@
+.containerspe {
+    width: 100%;
+    min-height: 819px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    border: 1px solid #2AA8FF;
+    opacity: 1;
+    
+}
+
+.containerspe h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dricons {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    width: 100%;
+    
+    box-sizing: border-box;
+}
+
+.icondoct {
+     width: 100%;
+    max-width: 280px;
+    height: 394px;
+    object-fit: contain;
+    display: block;
+    border-radius: 250px 250px 4px 4px;
+}
+
+
+.drname {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.drspecialise {
+    margin-top: 10px;
+    color: #2AA7FF;
+}
+.myswiper {
+     width: 100%;
+    overflow: hidden;
+    padding: 0 10px 45px;
+    box-sizing: border-box;
+}
+.myswiper .swiper-slide{
+    
+    display: flex;
+    justify-content: center;
+    
+    box-sizing: border-box;
+}
+.transparent-bg {
+    background: linear-gradient(180deg, #D6EEFF, #2AA7FF);
+}
+
+/* Swiper pagination */
+.myswiper .swiper-pagination {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 5px !important;
+    width: 100% !important;
+    max-width: 1150px;
+    height: 37px;
+    transform: translateX(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    border: 1px solid #2f80ed;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Normal dots */
+.myswiper .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background: #c4c4c4;
+  opacity: 1;
+  margin: 0 5px !important;
+}
+
+/* Active dot with outer circle */
+.myswiper .swiper-pagination-bullet-active {
+  background: #2f80ed !important;
+  box-shadow: 0 0 0 3px white, 0 0 0 4px #2f80ed;
+}
+@media (max-width: 599px) {
+    .icondoct {
+        width: 160px;
+        height: 210px;
+    }
+
+    .containerspe h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .icondoct {
+        width: 180px;
+        height: 230px;
+    }
+}

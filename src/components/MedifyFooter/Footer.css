@@ -1,0 +1,176 @@
+.footer {
+
+    width: 100%;
+    max-width: 1440px;
+    height: 424px;
+    position: relative;
+    background-color: #1B3C74;
+
+}
+.footerContainer {
+   
+    width: 1143px;
+    height: 354px;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+
+}
+
+
+.footerimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footerimg1 {
+    width: 358.81px;
+    height: 235px;
+    object-fit: contain;
+}
+
+
+.footerlinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.linksgp1,
+.linksgp2,
+.linksgp3 {
+    position: absolute;
+    top: 0;
+    height: 235px;
+    object-fit: contain;
+     
+}
+
+.linksgp1 {
+    left: 399.81px;
+    width: 231.82px;
+  
+}
+
+.linksgp2 {
+    left: 672.63px;
+    width: 230.98px;
+}
+
+.linksgp3 {
+    left: 944.61px;
+    width: 330.37px;
+}
+.footertext {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    left: 0;
+    top: 330px;
+    position: absolute;
+    margin: 0;
+}
+.footertext1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Tablet view */
+@media screen and (max-width: 900px) {
+
+    .footer {
+        height: auto;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .footerContainer {
+        width: 100%;
+        height: auto;
+        top: 0;
+    }
+
+    .footerimg {
+        position: static;
+        margin-bottom: 25px;
+    }
+
+    .footerimg1 {
+        width: 100%;
+        max-width: 358.81px;
+        height: auto;
+    }
+
+    .footerlinks {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .linksgp1,
+    .linksgp2,
+    .linksgp3 {
+        position: static;
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+
+    .linksgp3 {
+        grid-column: 1 / -1;
+    }
+
+    .footertext {
+        position: static;
+        margin-top: 25px;
+    }
+}
+
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+
+    .footer {
+        padding: 25px 16px;
+    }
+
+    .footerimg {
+        text-align: center;
+    }
+
+    .footerimg1 {
+        max-width: 320px;
+    }
+
+    .footerlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .linksgp1,
+    .linksgp2 {
+        width: 100%;
+        max-width: 232px;
+    }
+
+    .linksgp3 {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .footertext {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footertext1 {
+        font-size: 12px;
+    }
+}

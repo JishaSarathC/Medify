@@ -1,0 +1,121 @@
+
+.statecity {
+ width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 319px) minmax(0, 319px) 149px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 26px;
+}
+
+#state,
+#city {
+  width: 100%;
+}
+
+.statecity .MuiOutlinedInput-root {
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#searchBtn {
+  width: 149px;
+  height: 62px;
+  background-color: #2aa8ff;
+  text-transform: none;
+  font-size: 18px;
+  border-radius: 6px;
+}
+ 
+.search-icon {
+  width:20px;
+  height:20px;
+  margin-right:8px;
+ 
+}
+.search-icon-white{
+  width:20px;
+  height:20px;
+  margin-right:8px;
+ filter: brightness(0) invert(1);
+}
+/* SearchResults page only */
+.statecity.results-search {
+  position: static;
+  transform: none;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 145px;
+  gap: 12px;
+
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Input height */
+.statecity.results-search .MuiOutlinedInput-root {
+  height: 50px;
+  font-size: 14px;
+}
+
+/* Search button */
+.statecity.results-search #searchBtn {
+  width: 145px;
+  height: 50px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .statecity {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #searchBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .statecity {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .statecity.results-search {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 120px;
+    gap: 8px;
+  }
+
+  .statecity.results-search #searchBtn {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .statecity.results-search {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .statecity.results-search #searchBtn {
+    width: 100%;
+  }
+}

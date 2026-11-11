@@ -1,0 +1,59 @@
+.container{
+    width:100%;
+    
+}
+.carousel-img {
+  width: 100%;
+  height: 199px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Swiper container */
+.myswiper {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  border: none;
+}
+
+/* Small rectangle around pagination dots */
+.myswiper .swiper-pagination {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 5px !important;
+
+  width: 100% !important;
+  max-width: 1150px;
+  height: 37px;
+
+  transform: translateX(-50%);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 0;
+  border: 1px solid #2f80ed;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Normal dots */
+.myswiper .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background: #c4c4c4;
+  opacity: 1;
+  margin: 0 5px !important;
+}
+
+/* Active dot with outer circle */
+.myswiper .swiper-pagination-bullet-active {
+  background: #2f80ed !important;
+  box-shadow: 0 0 0 3px white, 0 0 0 4px #2f80ed;
+}

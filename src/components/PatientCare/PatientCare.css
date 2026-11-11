@@ -1,0 +1,196 @@
+.patcontainer{
+   width: 100%;
+    min-height: 598px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F0FF;
+    margin-top:20px;
+}
+.carecontainer{
+   width: 1153px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.imageWrapper {
+  width: 519px;
+    height: 486px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.pat1 {
+  width: 234px;
+  height: 86px;
+  top: 60px;
+  left: 0;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 3;
+}
+
+.pat2 {
+  width: 332px;
+  height: 275px;
+  top: 0;
+  left: 120px;
+  position: absolute;
+  z-index: 2;
+}
+
+.pat3 {
+  width: 332px;
+  height: 275px;
+  top: 221px;
+  left: 60px;
+  position: absolute;
+  z-index: 3;
+}
+.carecont{
+    display:flex;
+    flex-direction: row;
+}
+.care{
+    color:#2AA7FF;
+}
+.helpcontainer {
+ width: 563px;
+    min-height: 375px;
+    padding-left: 20px;
+}
+
+.tag {
+  color: #2AA7FF;
+  font-weight: 600;
+}
+
+.title4 {
+  color: #2AA7FF;
+}
+
+.text1 {
+  display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.text1 img {
+  display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+/* Tablet */
+@media screen and (max-width: 900px) {
+
+    .patcontainer {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .carecontainer {
+        width: 90%;
+        height: auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .imageWrapper {
+        width: 48%;
+        height: 420px;
+        flex-shrink: 1;
+    }
+
+    .pat1 {
+        width: 42%;
+        height: auto;
+        top: 60px;
+    }
+
+    .pat2 {
+        width: 65%;
+        height: auto;
+        top: 15px;
+        left: 23%;
+    }
+
+    .pat3 {
+        width: 65%;
+        height: auto;
+        top: 190px;
+        left: 10%;
+    }
+
+    .helpcontainer {
+        width: 52%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .patcontainer {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .carecontainer {
+        width: 92%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .imageWrapper {
+        width: 100%;
+        max-width: 519px;
+        height: clamp(330px, 85vw, 430px);
+    }
+
+    .pat1 {
+        width: 42%;
+        height: auto;
+        top: 12%;
+        left: 0;
+    }
+
+    .pat2 {
+        width: 65%;
+        height: auto;
+        top: 5%;
+        left: 25%;
+    }
+
+    .pat3 {
+        width: 65%;
+        height: auto;
+        top: 48%;
+        left: 8%;
+    }
+
+    .helpcontainer {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .helpcontainer h1 {
+        font-size: 30px;
+    }
+
+    .helpcontainer > p {
+        line-height: 1.6;
+    }
+
+    .text1 {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,204 @@
+/* Tablet */
+/* My Bookings blue header */
+.my-bookings-header {
+  width: 100%;
+  height: 62px;
+  background: linear-gradient(to right, #2AA7FF, #0070C0);
+  position: relative;
+  margin-bottom: 55px;
+}
+
+/* Title on left */
+.booking-title {
+  position: absolute;
+  left: 10%;
+  top: 17px;
+}
+
+/* Search panel on right */
+.my-bookings-search {
+  position: absolute;
+  top: 25px;
+  right: 8%;
+
+  width: 490px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #FFFFFF;
+  padding: 16px;
+  border-radius: 11px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+/* Appointment information */
+.appointment-info {
+  padding-top: 4px;
+}
+@media screen and (max-width: 900px) {
+
+  .booking-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 15px 20px !important;
+    gap: 15px !important;
+  }
+
+  .booking-header h5 {
+    text-align: center;
+  }
+
+  .booking-search {
+    width: 100% !important;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .oral-health-ad {
+    width: 75% !important;
+    max-width: 450px;
+    margin: 20px auto;
+  }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+  .booking-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 15px !important;
+    gap: 12px !important;
+  }
+
+  .booking-header h5 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .booking-search {
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 8px !important;
+  }
+
+  .booking-card {
+    padding: 8px !important;
+  }
+
+  .booking-card-content {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 12px !important;
+  }
+
+  .booking-details {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .booking-details h3 {
+    font-size: 18px;
+  }
+
+  .oral-health-ad {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+}
+/* Tablet */
+@media (max-width: 900px) {
+
+  .my-bookings-header {
+    height: 135px;
+    margin-bottom: 45px;
+  }
+
+  .booking-title {
+    left: 5%;
+    top: 10px;
+  }
+
+  .my-bookings-search {
+    top: 55px;
+    right: 5%;
+    width: 90%;
+    max-width: 490px;
+  }
+
+  .booking-card-content {
+    grid-template-columns: 90px minmax(0, 1fr) !important;
+  }
+
+  .appointment-info {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .my-bookings-header {
+    height: 145px;
+    margin-bottom: 40px;
+  }
+
+  .booking-title {
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 21px;
+  }
+
+  .my-bookings-search {
+    top: 55px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .my-bookings-search button {
+    min-width: 95px;
+  }
+
+  .booking-card-content {
+    grid-template-columns: 75px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .booking-card-content > :first-child {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .booking-card-content > :nth-child(2) {
+    grid-column: 2;
+  }
+
+  .booking-card-content > :nth-child(3) {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  .booking-details {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .appointment-info {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,422 @@
+
+
+
+.contactcontainer {
+    width: 100%;
+    max-width: 1440px;
+    height: 542px;
+    position: relative;
+    overflow: hidden;
+}
+
+.phonecontainer {
+    position: relative;
+    width: 100%;
+    height: 542px;
+}
+
+.phone {
+    position: absolute;
+    width: 302px;
+}
+
+/* Back phone */
+.phone2 {
+    left: 326px;
+    top: 41px;
+    height: 503px;
+    z-index: 1;
+}
+
+/* Front phone */
+.phone1 {
+    left: 126px;
+    top:111px;
+    height: 427px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Both phone frames */
+.phoneframe1,
+.phoneframe2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 302px;
+    object-fit: fill;
+    z-index: 2;
+}
+
+.phoneframe1 {
+    height: 427px;
+}
+
+.phoneframe2 {
+    height: 503px;
+}
+
+/* Both phone screen contents */
+.phonecontent1,
+.phonecontent2 {
+    position: absolute;
+    width: 296.02px;
+    height: 477.93px;
+    top: 38px;
+    left: 3px;
+    border-radius: 40px;
+    object-fit: fill;
+    z-index: 1;
+}
+.appcontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 542px;
+    pointer-events: none;
+}
+
+.vectorimage {
+    position: absolute;
+    width: 112.35px;
+    height: 56.17px;
+    top: 185.23px;
+    left: 631.92px;
+   transform: rotate(50.51deg);
+    opacity: 0.8;
+}
+.downloadapp {
+    position: absolute;
+    width: 338px;
+    height: 134px;
+    top: 100px;  /* Earlier 117px */
+    left: 717px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B3C74;
+}
+
+.downloadapp span {
+    color: #2AA7FF;
+}
+.downloadtext {
+    position: absolute;
+    width: 250px;
+    height: 24px;
+    top: 252px;
+    left: 714px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #414146;
+    margin: 0;
+}
+.phoneinput {
+    position: absolute;
+    top: 304px;
+    left: 714px;
+    width: 436px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.countrycode {
+    padding-left: 12px;
+    font-size: 14px;
+    color: #414146;
+    font-family: "Lato", sans-serif;
+}
+
+.phoneinput input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.smsbutton {
+    position: absolute;
+    top: 304px;
+    left: 1122px;
+    width: 121px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #2AA8FF;
+    color:white
+}
+.appstore {
+    position: absolute;
+    top: 409px;
+    left: 717px;
+    display: flex;
+    gap: 16px;
+}
+
+.appimage,
+.gooimage {
+    width: 224px;
+    height: 69px;
+    object-fit: contain;
+}
+
+/* Download form grouping */
+
+.downloadform {
+    position: absolute;
+    top: 304px;
+    left: 714px;
+    width: 529px;
+    display: flex;
+    gap: 0;
+}
+
+.downloadform .phoneinput {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 408px;
+    flex-shrink: 1;
+}
+
+.downloadform .smsbutton {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 121px;
+    flex-shrink: 0;
+}
+
+/* Tablet */
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .contactcontainer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: auto;
+        min-height: 500px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .phonecontainer {
+        width: 46%;
+        height: 420px;
+        flex-shrink: 0;
+    }
+
+    .phone {
+        transform: scale(0.55);
+        transform-origin: top left;
+    }
+
+    .phone1 {
+        left: 0;
+        top: 100px;
+    }
+
+    .phone2 {
+        left: 115px;
+        top: 30px;
+    }
+
+    .appcontent {
+        position: relative;
+        width: 54%;
+        height: auto;
+        left: auto;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vectorimage {
+        display: none;
+    }
+
+    .downloadapp {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .downloadtext {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .downloadform {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .downloadform .phoneinput {
+        width: calc(100% - 100px);
+    }
+
+    .downloadform .smsbutton {
+        width: 100px;
+    }
+
+    .appstore {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 25px;
+        gap: 8px;
+    }
+
+    .appimage,
+    .gooimage {
+        width: calc(50% - 4px);
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contactcontainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        padding: 30px 16px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .appcontent {
+        position: relative;
+        order: 1;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .downloadapp {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    .downloadtext {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .downloadform {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 24px;
+        box-sizing: border-box;
+    }
+
+    .downloadform .phoneinput {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: calc(100% - 100px);
+        height: 48px;
+        box-sizing: border-box;
+    }
+
+    .downloadform .smsbutton {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 48px;
+        box-sizing: border-box;
+        font-size: 13px;
+    }
+
+    .appstore {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 25px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .appimage,
+    .gooimage {
+        width: calc(50% - 4px);
+        height: auto;
+        object-fit: contain;
+    }
+
+    .phonecontainer {
+        position: relative;
+        order: 2;
+        width: 100%;
+        height: 320px;
+        margin-top: 30px;
+    }
+
+    .phone {
+        transform: scale(0.48);
+        transform-origin: top left;
+    }
+
+    .phone1 {
+        left: calc(50% - 155px);
+        top: 65px;
+        margin-left: 0;
+    }
+
+    .phone2 {
+        left: calc(50% - 10px);
+        top: 0;
+        margin-left: 0;
+    }
+
+    .vectorimage {
+        display: none;
+    }
+}

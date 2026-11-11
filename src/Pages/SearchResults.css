@@ -1,0 +1,43 @@
+/* Hospital list and advertisement */
+.results-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.hospital-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.oral-health-ad {
+  width: 100%;
+}
+
+.oral-health-ad img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 900px) {
+  .results-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .oral-health-ad {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .oral-health-ad {
+    max-width: 100%;
+  }
+}
