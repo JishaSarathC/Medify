@@ -135,49 +135,65 @@ width: "100%"
     </Box>
 
     {/* Hospital Details */}
-    <Box sx={{ minWidth: 0 }}>
+<Box sx={{ minWidth: 0 }}>
 
-      <Typography
-        component="h3"
-        sx={{
-          color: "#00AEEF",
-          fontSize: { xs: "16px", sm: "21px" },
-          fontWeight: 600,
-          marginBottom: 1
-        }}
-      >
-        {hospital["Hospital Name"]}
-      </Typography>
+  {/* Hospital Name */}
+  <Typography
+    component="h3"
+    sx={{
+      fontFamily: "Poppins, sans-serif",
+      color: "#14BEF0",
+      fontSize: "20px",
+      fontWeight: 600,
+      lineHeight: "28px",
+      letterSpacing: "0%",
+      textTransform: "capitalize"
+    }}
+  >
+    {hospital["Hospital Name"]?.toLowerCase()}
+  </Typography>
 
-      <Typography
-        sx={{
-          color: "#414146",
-          fontWeight: 600,
-          fontSize: "15px"
-        }}
-      >
-        {hospital["City"]}, {hospital["State"]}
-      </Typography>
+  {/* City and State */}
+  <Typography
+    sx={{
+      fontFamily: "Poppins, sans-serif",
+      color: "#414146",
+      fontWeight: 700,
+      fontSize: "14px",
+      lineHeight: "19.6px",
+      textTransform: "capitalize"
+    }}
+  >
+    {`${hospital["City"]}, ${hospital["State"]}`.toLowerCase()}
+  </Typography>
 
-      <Typography
-        sx={{
-          color: "#414146",
-          fontSize: "15px",
-          lineHeight: 1.5
-        }}
-      >
-        {hospital["Address"]}
-      </Typography>
+  {/* Address */}
+  <Typography
+    sx={{
+      fontFamily: "Poppins, sans-serif",
+      color: "#414146",
+      fontSize: "14px",
+      fontWeight: 400,
+      lineHeight: "19.6px",
+      textTransform: "capitalize"
+    }}
+  >
+    {hospital["Address"]?.toLowerCase()}
+  </Typography>
 
-      <Typography
-        sx={{
-          color: "#414146",
-          fontSize: "14px",
-          marginTop: 0.5
-        }}
-      >
-        {hospital["Hospital Type"]}
-      </Typography>
+  {/* Hospital Type */}
+  <Typography
+    sx={{
+      fontFamily: "Poppins, sans-serif",
+      color: "#414146",
+      fontSize: "14px",
+      fontWeight: 400,
+      lineHeight: "19.6px",
+      marginTop: "4px"
+    }}
+  >
+    {hospital["Hospital Type"]}
+  </Typography>
 
       {/* Consultation Fee */}
       <Box

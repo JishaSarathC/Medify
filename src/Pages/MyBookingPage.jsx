@@ -181,32 +181,34 @@ const handleSearch = () => {
       component="h3"
       sx={{
         color: "#00AEEF",
-        fontSize: { xs: "17px", sm: "16px" },
-        fontWeight: 600,
-        marginBottom: 1
+        fontSize: "16px",
+    fontWeight: 700,
+     textTransform: "capitalize"
       }}
     >
-      {booking.hospitalName}
+      {booking.hospitalName.toLowerCase()}
     </Typography>
 
     <Typography
       sx={{
         fontSize: "13px",
         fontWeight: 600,
-        color: "#414146"
+        color: "#414146",
+         textTransform: "capitalize"
       }}
     >
-      {booking.city}, {booking.state}
+      {`${booking.city}, ${booking.state}`.toLowerCase()}
     </Typography>
 
     <Typography
       sx={{
         fontSize: "13px",
         color: "#414146",
-        lineHeight: 1.4
+        lineHeight: 1.4,
+        textTransform: "capitalize"
       }}
     >
-      {booking.address}
+       {booking.address?.toLowerCase()}
     </Typography>
 
     {/* Rating */}
