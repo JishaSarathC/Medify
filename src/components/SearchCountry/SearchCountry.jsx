@@ -22,21 +22,29 @@ export default function SearchCountry({ isResultsPage=false}) {
 
   // Fetch states
   useEffect(() => {
-    const fetchStates = async () => {
-      try {
-        const response = await fetch(
-          "https://meddata-backend.onrender.com/states"
-        );
+  const fetchStates = async () => {
+    try {
+      const response = await fetch(
+        "https://meddata-backend.onrender.com/states"
+      );
 
-        const data = await response.json();
-        setStates(Array.isArray(data) ? data : []);
-      } catch (error) {
-        console.error("Error fetching states:", error);
+      if (!response.ok) {
+        throw new Error("Failed to fetch states");
       }
-    };
 
-    fetchStates();
-  }, []);
+      const data = await response.json();
+
+      console.log("States API response:", data);
+
+      setStates(Array.isArray(data) ? data : []);
+    } catch (error) {
+      console.error("Error fetching states:", error);
+      setStates([]);
+    }
+  };
+
+  fetchStates();
+}, []);
 
   // Fetch cities whenever state changes
   useEffect(() => {
@@ -91,9 +99,10 @@ export default function SearchCountry({ isResultsPage=false}) {
   return (
     <form onSubmit={handleSearch} className={`statecity ${isResultsPage ? "results-search" : ""}`}>
 
-      <div id="state">
+      <div >
         <FormControl fullWidth>
           <Select
+          id="state"
             value={stateName}
             onChange={handleStateChange}
             displayEmpty
@@ -117,9 +126,10 @@ export default function SearchCountry({ isResultsPage=false}) {
         </FormControl>
       </div>
 
-      <div id="city">
+      <div >
         <FormControl fullWidth>
           <Select
+          id="city"
             value={cityName}
             onChange={handleCityChange}
             displayEmpty
