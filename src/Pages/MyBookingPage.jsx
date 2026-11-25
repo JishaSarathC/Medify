@@ -29,11 +29,16 @@ export default function MyBookingPage() {
   });
   const [searchText, setSearchText] = useState("");
 const [filteredBookings, setFilteredBookings] = useState(bookings);
+const getHospitalName = (booking) => {
+  return (
+    booking.hospitalName ||
+    booking["Hospital Name"] ||
+    ""
+  ).toLowerCase();
+};
 const handleSearch = () => {
   const results = bookings.filter((booking) =>
-    booking.hospitalName
-      .toLowerCase()
-      .includes(searchText.toLowerCase())
+    getHospitalName(booking).includes(searchText.toLowerCase())
   );
 
   setFilteredBookings(results);
@@ -186,7 +191,7 @@ const handleSearch = () => {
      textTransform: "capitalize"
       }}
     >
-      {booking.hospitalName.toLowerCase()}
+      {getHospitalName(booking)}
     </Typography>
 
     <Typography
